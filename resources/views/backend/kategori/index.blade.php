@@ -7,7 +7,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary me-3 mt-3 mb-3">Tambah Kategori</a>
+                        <a href="{{route('kategori-create')}}" class="btn btn-primary me-3 mt-3 mb-3">Tambah Kategori</a>
                     </div>
                      
                     
@@ -27,9 +27,9 @@
                                     <tr>
                                         <td>{{ $index + 1 }}</td>
                                         <td>{{ $item->nama }}</td>
-                                        <td>{{ $item->deskripsi }}</td>
+                                        <td>{{ $item->diskripsi }}</td>
                                         <td>
-                                            <a href="#" class="btn btn-primary">Edit</a>
+                                            <a href="kategori/edit{{$item->id}}" class="btn btn-primary">Edit</a>
                                             <a href="#" class="btn btn-danger">Hapus</a>
                                         </td>
                                     </tr>
