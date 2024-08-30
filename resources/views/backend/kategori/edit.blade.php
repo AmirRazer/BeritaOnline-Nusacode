@@ -5,12 +5,12 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Tambah Kategori</h4>
+                        <h4 class="card-title">Update Kategori</h4>
                     </div>
                     <div class="card-content">
                         <div class="card-body">
                                         
-                            <form action="kategori/update/{{('$data->id') }}" method="POST"class="form form-horizontal">
+                            <form action="{{ route('kategori-update', $data->id) }}" method="POST"class="form form-horizontal">
                                 @csrf
                                 <div class="form-body">
                                     <div class="row">

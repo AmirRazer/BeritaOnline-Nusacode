@@ -29,8 +29,10 @@
                                         <td>{{ $item->nama }}</td>
                                         <td>{{ $item->diskripsi }}</td>
                                         <td>
-                                            <a href="kategori/edit{{$item->id}}" class="btn btn-primary">Edit</a>
-                                            <a href="#" class="btn btn-danger">Hapus</a>
+                                            <a href="kategori/edit/{{$item->id}}" class="btn btn-primary">Edit</a>
+                                            <a href="kategori/delete/{{$item->id}}">
+                                             <button onclick="confirm('Yakin hapus data?')" type="button" class="btn btn-danger">Hapus</button>
+                                            </a>
                                         </td>
                                     </tr>
                                     @endforeach
